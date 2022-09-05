@@ -24,6 +24,7 @@ class Colour {
       this.element.querySelector(".lock-toggle").classList.remove("is-locked");
       this.element.querySelector("img").src = "icons/lock-open.svg";
     }
+    document.activeElement.blur();
   }
 
   toggleLocked() {
